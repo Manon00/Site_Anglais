@@ -44,7 +44,7 @@ header a:hover {
 #menu a {
     color: #C18726;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 45px;
     margin-right: 12px;
     vertical-align: text-bottom;
     font-weight: bold;
@@ -87,9 +87,6 @@ header a:hover {
     margin: 0;
     outline: 0;
     padding: 0;
-    position: absolute;
-    top: 0;
-    right: 10px;
     width: 50px;
 }
 
@@ -145,7 +142,7 @@ main{
 #Boxes, #Prod, #Serv {
     color: #593510;
 }
-#Boxes #nav, #Prod #nav, #Serv #nav {
+#Boxes #nav, #Prod #nav, #Serv #nav, #About #nav {
     padding-left: 2em;
     padding-top: 2em;
     padding-bottom: 2em;
@@ -154,7 +151,6 @@ main{
 #Boxes #Banniere, #Prod #BanniereAp, #Serv #BanniereSe{
     background-size: cover;
     color: #c18726;
-    font-size: 3em;
     padding: 2% 4%;
 }
 #Boxes > #Banniere {
@@ -168,12 +164,12 @@ main{
     background-image: url(images/banniereServ.jpg);
 }
 
-#Boxes #Banniere p, #Prod #BanniereAp p, #Serv #BanniereSe p{
-    -webkit-text-stroke: 2px;
+#Boxes #Banniere h2, #Prod #BanniereAp h2, #Serv #BanniereSe h2{
+    -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: #FFFFB9;
 }
 
-#Boxes #Banniere p, #Prod #BanniereAp p, #Serv #BanniereSe p, .unServ h4 {
+#Boxes #Banniere h2, #Prod #BanniereAp h2, #Serv #BanniereSe h2, .unServ h4 {
     display: inline-block;
     padding: 0 15px 0 10px;
     color: #593510;
@@ -203,7 +199,10 @@ main{
 
 /* Feuille de style portable */
 
-@media (max-width:980px) {
+@media screen and (max-width:640px) and (min-width: 0px){
+    #About {
+        padding: 5px;
+    }
     .LesBox {
         padding: 10px;
     }
@@ -213,18 +212,37 @@ main{
     }
 
     .aBox {
-        flex-basis: 150px;
+        flex-basis: 95%;
         margin: 10px 10px;
         text-align: center;
     }
     
     .aBox h3 {
-        font-size: 20px;
+        font-size: 50px;
     }
 
     .aBox h4 {
-        font-size: 18px;
+        font-size: 45px;
     }
+
+    #Boxes #Banniere h2, #Prod #BanniereAp h2, #Serv #BanniereSe h2{
+        font-size: 2em;
+    }
+    #Boxes #nav, #Prod #nav, #Serv #nav, #About #nav {
+        padding-left: 2em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-size: 48px;
+    }
+
+    #menu #burger:before {
+        content: url(images/iconMenuTel.png);
+    }
+    
+    #menu #burger:checked:before {
+        content: url(images/iconCrossTel.png);
+    }
+    
 }
 
 /*SERVICES*/
@@ -267,25 +285,31 @@ main{
 
 /* Feuille de style portable */
 
-@media (max-width:980px) {
+@media screen and (max-width:640px) {
     #Serv .unServ div {
         flex-direction: column;
     }
 
     #Serv .unServ p {
         padding: 10px 0;
-        font-size: 0.95em;
+        font-size: 2.5em;
     }
 
     #Serv .unServ img {
         width: 60%;
         align-self: center;
     }
-
+    
     #Serv .unServ h4 {
-        font-size: 1.4em;
-        -webkit-text-stroke: 1px;
-        -webkit-text-stroke-color: #FFFFB9;
+        font-size: 3em;
+    }
+    #About #text{
+        margin: 0;
+    }
+    
+    #About #text p{
+        margin: 0;
+        font-size: 3em;
     }
 }
 
@@ -313,19 +337,7 @@ main{
     text-indent: 1em;
 }
 
-@media screen and (max-width: 640px) {
-    #About #text{
-        margin-left: 5vh;
-        margin-right: 5vh;
-    }
-    #About #text p{
-        margin: 1em;
-    }
 
-    #About a{
-        font-size: 80%;
-    }
-}
 
 
 /*FOOTER*/
@@ -345,4 +357,11 @@ footer a {
 
 footer a:hover{
     color: #C18726;
+}
+
+@media screen and (max-width:640px) {
+    footer {
+        font-size: 3em;
+    }
+    
 }
