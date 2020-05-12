@@ -162,7 +162,7 @@ main{
 }
 
 #Prod #BanniereAp {
-    background-image: url(images/banniereProduit.PNG);
+    background-image: url(images/banniereProduit.png);
 }
 #Serv #BanniereSe {
     background-image: url(images/banniereServ.jpg);
