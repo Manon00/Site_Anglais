@@ -88,11 +88,11 @@ header a:hover {
 }
 
 #menu #burger:before {
-    content: url(images/iconMenu.png);
+    content: url(images/iconMenuTel.png);
 }
 
 #menu #burger:checked:before {
-    content: url(images/iconCross.png);
+    content: url(images/iconCrossTel.png);
 }
 
 #menu #burger:checked + nav {
@@ -316,14 +316,6 @@ footer a:hover{
         padding-top: 1em;
         padding-bottom: 1em;
         font-size: 48px;
-    }
-
-    #menu #burger:before {
-        content: url(images/iconMenuTel.png);
-    }
-    
-    #menu #burger:checked:before {
-        content: url(images/iconCrossTel.png);
     }
 
     #Serv .unServ div {
