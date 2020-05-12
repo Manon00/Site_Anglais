@@ -157,7 +157,7 @@ main{
     font-size: 3em;
     padding: 2% 4%;
 }
-#Boxes #Banniere {
+#Boxes > #Banniere {
     background-image: url(images/BanniereBoite.jpg);
 }
 
