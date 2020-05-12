@@ -188,7 +188,7 @@ main{
 
 .aBox {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     align-self: flex-start;
     padding: 0.5em 0.25em;
