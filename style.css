@@ -151,36 +151,36 @@ main{
     padding-bottom: 2em;
 }
 
-#Boxes .Banniere, #Prod .BanniereAp, #Serv .BanniereSe{
+#Boxes #Banniere, #Prod #BanniereAp, #Serv #BanniereSe{
     background-size: cover;
     color: #c18726;
     font-size: 3em;
     padding: 2% 4%;
 }
-#Boxes .Banniere {
+#Boxes #Banniere {
     background-image: url(images/BanniereBoite.jpg);
 }
 
-#Prod .BanniereAp {
+#Prod #BanniereAp {
     background-image: url(images/banniereProduit.PNG);
 }
-#Serv .BanniereSe {
+#Serv #BanniereSe {
     background-image: url(images/banniereServ.jpg);
 }
 
-#Boxes .Banniere p, #Prod .BanniereAp p, #Serv .BanniereSe p{
+#Boxes #Banniere p, #Prod #BanniereAp p, #Serv #BanniereSe p{
     -webkit-text-stroke: 2px;
     -webkit-text-stroke-color: #FFFFB9;
 }
 
-#Boxes .Banniere p, #Prod .BanniereAp p, #Serv .BanniereSe p, .unServ h4 {
+#Boxes #Banniere p, #Prod #BanniereAp p, #Serv #BanniereSe p, .unServ h4 {
     display: inline-block;
     padding: 0 15px 0 10px;
     color: #593510;
     font-weight: bolder; 
 }
 
-#Boxes #LesBox {
+#Boxes .LesBox {
     display: flex;
     flex-wrap: wrap;
     padding: 25px 40px;
@@ -204,7 +204,7 @@ main{
 /* Feuille de style portable */
 
 @media (max-width:980px) {
-    #LesBox {
+    .LesBox {
         padding: 10px;
     }
     
