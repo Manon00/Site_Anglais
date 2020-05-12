@@ -33,11 +33,8 @@ header a:hover {
     color: #C18726;
 }
 
-@media screen and (max-width: 640px) {
-    header img {
-        height: 25vh;
-    }
-}
+
+    
 
 /*menu telephone*/
 
@@ -197,53 +194,6 @@ main{
     width: 80%;
 }
 
-/* Feuille de style portable */
-
-@media screen and (max-width:640px) and (min-width: 0px){
-    #About {
-        padding: 5px;
-    }
-    .LesBox {
-        padding: 10px;
-    }
-    
-    #Boxes, #Prod {
-        font-size: 80%;
-    }
-
-    .aBox {
-        flex-basis: 95%;
-        margin: 10px 10px;
-        text-align: center;
-    }
-    
-    .aBox h3 {
-        font-size: 50px;
-    }
-
-    .aBox h4 {
-        font-size: 45px;
-    }
-
-    #Boxes #Banniere h2, #Prod #BanniereAp h2, #Serv #BanniereSe h2{
-        font-size: 2em;
-    }
-    #Boxes #nav, #Prod #nav, #Serv #nav, #About #nav {
-        padding-left: 2em;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        font-size: 48px;
-    }
-
-    #menu #burger:before {
-        content: url(images/iconMenuTel.png);
-    }
-    
-    #menu #burger:checked:before {
-        content: url(images/iconCrossTel.png);
-    }
-    
-}
 
 /*SERVICES*/
 
@@ -280,37 +230,6 @@ main{
 #Serv .unServ p {
     padding: 10px 20px;
     font-size: 1.35em;
-}
-
-
-/* Feuille de style portable */
-
-@media screen and (max-width:640px) {
-    #Serv .unServ div {
-        flex-direction: column;
-    }
-
-    #Serv .unServ p {
-        padding: 10px 0;
-        font-size: 2.5em;
-    }
-
-    #Serv .unServ img {
-        width: 60%;
-        align-self: center;
-    }
-    
-    #Serv .unServ h4 {
-        font-size: 3em;
-    }
-    #About #text{
-        margin: 0;
-    }
-    
-    #About #text p{
-        margin: 0;
-        font-size: 3em;
-    }
 }
 
 /*MAIN ABOUT*/
@@ -360,6 +279,80 @@ footer a:hover{
 }
 
 @media screen and (max-width:640px) {
+    header img {
+        height: 25vh;
+    }
+
+    #About {
+        padding: 5px;
+    }
+
+    .LesBox {
+        padding: 10px;
+    }
+    
+    #Boxes, #Prod {
+        font-size: 80%;
+    }
+
+    .aBox {
+        flex-basis: 95%;
+        margin: 10px 10px;
+        text-align: center;
+    }
+    
+    .aBox h3 {
+        font-size: 50px;
+    }
+
+    .aBox h4 {
+        font-size: 45px;
+    }
+
+    #Boxes #Banniere h2, #Prod #BanniereAp h2, #Serv #BanniereSe h2{
+        font-size: 2em;
+    }
+    #Boxes #nav, #Prod #nav, #Serv #nav, #About #nav {
+        padding-left: 2em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-size: 48px;
+    }
+
+    #menu #burger:before {
+        content: url(images/iconMenuTel.png);
+    }
+    
+    #menu #burger:checked:before {
+        content: url(images/iconCrossTel.png);
+    }
+
+    #Serv .unServ div {
+        flex-direction: column;
+    }
+
+    #Serv .unServ p {
+        padding: 10px 0;
+        font-size: 2.5em;
+    }
+
+    #Serv .unServ img {
+        width: 60%;
+        align-self: center;
+    }
+    
+    #Serv .unServ h4 {
+        font-size: 3em;
+    }
+    #About #text{
+        margin: 0;
+    }
+    
+    #About #text p{
+        margin: 0;
+        font-size: 3em;
+    }
+
     footer {
         font-size: 3em;
     }
