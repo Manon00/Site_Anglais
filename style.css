@@ -224,43 +224,94 @@ main{
     }
 }
 
-/*MAIN ABOUT*/
+/*ALL PRODUCTS*/
 
-#About #text{
-    margin-left: 25vh;
-    margin-right: 25vh;
+#Prod {
+    color: #593510;
 }
 
-#About #text p{
-    margin: 3em;
+#Prod #nav {
+    padding-left: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
-#About h4{
-    font-variant: small-caps;
-    color: #4b2b0b;
+#Prod #BanniereAp {
+    background-image: url(images/banniereProduit.PNG);
+    background-size: cover;
+    color: #c18726;
+    font-size: 3em;
+    padding: 2% 4%;
 }
 
-#About hr{
-    background-color: #4b2b0b;
+#Prod #BanniereAp p {
+    display: inline-block;
+    padding: 0 15px 0 10px;
+    color: #593510;
+    font-weight: bolder;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: #FFFFB9;
 }
 
-#About .alinea{
-    text-indent: 1em;
+#Prod #LesPro {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 25px 40px;
 }
 
-@media screen and (max-width: 640px) {
-    #About #text{
-        margin-left: 5vh;
-        margin-right: 5vh;
+
+
+#Prod .aProd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+    padding: 0.5em 0.25em;
+    background-color: #c1882659;
+    color: #593510;
+    margin: 30px 20px;
+}
+
+#Prod .aProd:hover {
+    color: #593510;
+}
+
+#Prod .aProd:link {
+    text-decoration: none;
+}
+
+#Prod .aProd img {
+    width: 80%;
+}
+
+/* Feuille de style portable */
+
+@media (max-width:980px) {
+    #Prod #LesPro {
+        padding: 10px;
     }
-    #About #text p{
-        margin: 1em;
-    }
 
-    #About a{
+    #Prod {
         font-size: 80%;
     }
+
+    #Prod .aProd {
+        flex-basis: 150px;
+        margin: 10px 10px;
+        text-align: center;
+    }
+
+    #Prod .aProd h3 {
+        font-size: 20px;
+    }
+
+    #Prod .aProd h4 {
+        font-size: 18px;
+    }
 }
+
+
 
 /*SERVICES*/
 
@@ -354,6 +405,45 @@ main{
         -webkit-text-stroke-color: #FFFFB9;
     }
 }
+
+/*MAIN ABOUT*/
+
+#About #text{
+    margin-left: 25vh;
+    margin-right: 25vh;
+}
+
+#About #text p{
+    margin: 3em;
+}
+
+#About h4{
+    font-variant: small-caps;
+    color: #4b2b0b;
+}
+
+#About hr{
+    background-color: #4b2b0b;
+}
+
+#About .alinea{
+    text-indent: 1em;
+}
+
+@media screen and (max-width: 640px) {
+    #About #text{
+        margin-left: 5vh;
+        margin-right: 5vh;
+    }
+    #About #text p{
+        margin: 1em;
+    }
+
+    #About a{
+        font-size: 80%;
+    }
+}
+
 
 /*FOOTER*/
 
