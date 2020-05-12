@@ -1,3 +1,3 @@
-English website creation project 
-Theme : chocolate manufacturer 
-Team : Manon Goasguen, Baptiste Tutellier, Thomas Pronost
+<p>English website creation project</p>
+<p>Theme : chocolate manufacturer </p>
+<p>Team : Manon Goasguen, Baptiste Tutellier, Thomas Pronost</p>
